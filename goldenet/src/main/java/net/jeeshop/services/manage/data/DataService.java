@@ -1,0 +1,1 @@
+package net.jeeshop.services.manage.data;import net.jeeshop.core.Services;import net.jeeshop.services.common.Data;public interface DataService extends Services<Data> {}

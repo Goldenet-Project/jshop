@@ -1,0 +1,1 @@
+package net.jeeshop.services.manage.data.dao;import org.springframework.stereotype.Repository;import net.jeeshop.core.DaoManager;import net.jeeshop.services.common.Data;public interface DataDao extends DaoManager<Data> {}
