@@ -6,7 +6,7 @@
 <style>
 	
 	/* IndexBottom */
-.IndexBottom{padding-top:20px;padding-bottom:10px;border-top: 2px solid #f40;}
+.IndexBottom{padding-top:20px;padding-bottom:10px;}
 .IndexBottom dl{float: left;display: inline;width: 110px;margin-top: 22px;margin-left: 43px;}
 .IndexBottom dt{margin-left: 5px;font-family: "Microsoft YaHei",\5fae\8f6f\96c5\9ed1,\5b8b\4f53;font-size: 16px;}
 .IndexBottom dd{margin-top: 4px;}
@@ -18,11 +18,13 @@
 </style>
 	<div id="footer" style="margin-top: 20px;">
 	
-<!-- 	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"> -->
-	
+	<!--<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"> -->
+		
 		<div class="container">
+			
 			<div class="row IndexBottom">
-				<#list systemManager().newsCatalogs as item>
+				
+				<!--<#list systemManager().newsCatalogs as item>
 					<div class="col-xs-2" style="text-align: center;">
 						<div class="row" style="margin-bottom: 10px;"><strong>${item.name!""}</strong></div>
 						<#if item.news??>
@@ -36,8 +38,11 @@
 						</#if>
 					</div>
 				</#list>
+				-->
 			</div>
+			
 			<hr style="margin: 0px;">
+		
 			<!-- 友情链接 -->
 			<div class="row" >
 				<div class="col-xs-12" style="text-align: center;">
