@@ -135,7 +135,6 @@ function defaultProductImg(){
 						<div class="row">
 							<div class="col-xs-3">
 								<a href="${basepath}/product/${item.id!""}.html" target="_blank" title="${item.name!""}">
-									<h>嚄嚄嚄嚄嚄${item.id}</h>
 									<img class="lazy" style="border: 0px;display: block;margin: auto;width: 50px;height: 50px;"
                                          src="${systemSetting().defaultProductImg}"
                                          data-original="${systemSetting().imageRootPath}${item.picture!""}" />
@@ -349,10 +348,10 @@ function defaultProductImg(){
 											<!-- <a id="addProductToCartErrorTips" href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="购买的商品超出库存数！"></a> -->
 											<span onclick="addFunc(this,false)" style="cursor: pointer;"><img src="${basepath}/resource/images/maximize.png" style="vertical-align: middle;"/></span>
 											
-											
+											<!--
 											(库存：<span id="stock_span_id">${e.stock!""}</span>
-												${e.unit!""})<br>
-											
+												${e.unit!""})</span><br>
+											-->
 											<!-- 超出库存提示语--> 
 											<div id="exceedDivError" class="alert alert-danger fade in" style="display: none;margin-bottom: 0px;">
 		<!-- 										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> -->
@@ -368,8 +367,6 @@ function defaultProductImg(){
 									<div class="row">
 										<div class="col-xs-12">
 											<#if e.status==2 && e.stock gt 0>
-											
-											
 												<a name="stockErrorTips" productid="${id!""}" href="#" data-toggle="tooltip" title="" data-placement="top" ></a>
 												<button type="button" data-toggle="show" data-placement="top" id="addToCartBtn" onclick="addToCart()" value="加入购物车" disabled="disabled" class="btn btn-primary btn-sm">
 													<span class="glyphicon glyphicon-shopping-cart"></span>加入购物车
@@ -465,7 +462,7 @@ function defaultProductImg(){
 <script src="${basepath}/resource/js/jquery.imagezoom/js/jquery.imagezoom.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-
+	
 	$(".jqzoom").imagezoom();
 	
 	$("#thumblist li a").click(function(){
@@ -473,6 +470,8 @@ $(document).ready(function(){
 		$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
 		$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
 	});
+	
+	
 });
 </script>
 <script>

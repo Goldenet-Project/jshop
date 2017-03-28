@@ -30,7 +30,7 @@ div.zoomMask{position:absolute;background:url("${basepath}/resource/js/jquery.im
 	width:20px;height:20px;
 }
 </style>
-<div class="box" id="mainBox00">
+<div id="mainBox00" style="width: 370px;">
 
 	<div class="tb-booth tb-pic tb-s310">
 		<#list e.productImageList as img>

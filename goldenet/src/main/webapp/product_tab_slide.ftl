@@ -33,7 +33,7 @@
 			</div>
 			<div class="bd">
 				<ul>
-					<!-- 商品参数 -->
+					<!-- 商品参数
 					<div class="row">
 						<div class="col-md-12">
 							<#list e.parameterList as item>
@@ -42,7 +42,7 @@
 								</div>
 							</#list>
 						</div>
-					</div>
+					</div> -->
 					<br>
 					
 					<!-- 商品HTML信息 -->

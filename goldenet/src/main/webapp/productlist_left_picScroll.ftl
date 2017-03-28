@@ -20,7 +20,7 @@
 
 		</style>
 
-		<div class="picScroll-top">
+		<div class="picScroll-top" style="width:85%;height:500px">
 			<div class="hd"><b>热门推荐</b>
 				<a class="next"></a>
 				<ul></ul>

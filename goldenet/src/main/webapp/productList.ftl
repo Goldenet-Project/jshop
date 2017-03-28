@@ -86,6 +86,7 @@ function defaultProductImg(){
 						<#if attrs??>
 							
 							<div class="panel panel-default" style="margin:10px 0px;">
+					              <!--
 					              <div class="panel-body" style="font-weight: normal;text-align: center;">
 					              	  
 <#--<%-- 					              	    <span style="margin:5px;font-weight: bold;">属性</span> --%>-->
@@ -115,7 +116,7 @@ function defaultProductImg(){
 											</#list>
 					              	  
 						              </div>
-					              </div>
+					              </div>-->
 							</div>
 								
 							

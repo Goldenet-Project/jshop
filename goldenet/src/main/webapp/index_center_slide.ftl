@@ -1,4 +1,3 @@
-
 <!-- 首页中间位置图片轮播 -->
 <div class="zhuanti_box" style="padding 0">
   <div id="slideBox">
