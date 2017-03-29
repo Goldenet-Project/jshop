@@ -37,8 +37,7 @@ div.zoomMask{position:absolute;background:url("${basepath}/resource/js/jquery.im
 		
 			<#if img_index==0>
 				<a href="${systemSetting().imageRootPath}${img.image3!""}">
-<!-- 				name="box_img" style="border: 0px;display: block;margin: auto;max-height: 100%;max-width: 334px;"  -->
-				<img 
+				<img
 				src="${systemSetting().imageRootPath}${img.image2!""}"
 				rel="${systemSetting().imageRootPath}${img.image3!""}" class="jqzoom" /></a>
 			</#if>
