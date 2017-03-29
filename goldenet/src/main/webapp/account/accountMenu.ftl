@@ -18,6 +18,9 @@
 	<a href="${basepath}/account/favorite" class="list-group-item ${(currentMenu=="favorite")?string('active', '')}">
 		<span class="glyphicon glyphicon-tags"></span>&nbsp;收藏夹
 	</a>
+	<a href="${basepath}/account/exit"class="list-group-item ${(currentMenu=="exit")?string('exit', '')}">
+	<span class="glyphicon glyphicon-pause"></span>&nbsp;退出系统
+	</a>
 <#--<%--     <a href="${basepath}/account/letters.html" class="list-group-item <%=getCss("letters", aa)%>">系统信件<span class="badge"><s:property value="#session.WEB_USER_INFO.notReadLetters"/></span></a> --%>-->
 </ul>
 </#macro>
