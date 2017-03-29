@@ -46,12 +46,12 @@ body{
                         <span id="myshopMenuPPP" style="display: inline-block;z-index: 9999;position: relative;;">
 		          			<!-- 会员中心的菜单 -->
 		          			<span style="margin-top: 0px;">
-							  <a data-toggle="dropdown" style="display: block;margin-top: 0px;">
-                                  <span class="glyphicon glyphicon-user"></span>&nbsp;用户中心
-                                  (${currentAccount().nickname})
-                                  <span class="caret" style="display: inline-block;"></span>
+                              <a href="${basepath}/account/account" style="display: block;margin-top: 0px;">
+                              	  <span class="glyphicon glyphicon-user"></span>&nbsp;用户中心
+                              	   (${currentAccount().nickname})
+                              	  
                               </a>
-							  <ul class="dropdown-menu" id="myshopMenu" role="menu" style="display: none;margin-top: 0px;">
+							  <!--
                                   <li><a href="${basepath}/account/account"><span class="glyphicon glyphicon-user"></span>&nbsp;个人资料</a></li>
                                   <li><a href="${basepath}/account/topwd"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;修改密码</a></li>
                                   <li class="divider"></li>
@@ -62,6 +62,7 @@ body{
                                   <li class="divider"></li>
                                   <li><a href="${basepath}/account/exit"><span class="glyphicon glyphicon-pause"></span>&nbsp;退出系统</a></li>
                               </ul>
+                              -->
 							</span>
 		          		</span>
 		          		<span style="display: none;">
@@ -100,39 +101,7 @@ body{
 					</#list>
 				</div>
 			</div>
-			<div class="col-xs-3" style="height: 100%;">
-		    	<div class="row" style="height: 100%;">
-					<#if currentAccount()??>
-                        <span id="myshopMenuPPP" style="display: inline-block;z-index: 9999;position: relative;;">
-		          			<!-- 会员中心的菜单 -->
-		          			<span style="margin-top: 0px;">
-							  <a data-toggle="dropdown" style="display: block;margin-top: 0px;">
-                                  <span class="glyphicon glyphicon-user"></span>&nbsp;用户中心
-                                  (${currentAccount().nickname})
-                                  <span class="caret" style="display: inline-block;"></span>
-                              </a>
-							  <ul class="dropdown-menu" id="myshopMenu" role="menu" style="display: none;margin-top: 0px;">
-                                  <li><a href="${basepath}/account/account"><span class="glyphicon glyphicon-user"></span>&nbsp;个人资料</a></li>
-                                  <li><a href="${basepath}/account/topwd"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;修改密码</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="${basepath}/account/orders"><span class="glyphicon glyphicon-th"></span>&nbsp;我的订单</a></li>
-                                   <li><a href="${basepath}/account/score"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;我的积分</a></li>
-                                  <li><a href="${basepath}/account/address"><span class="glyphicon glyphicon-send"></span>&nbsp;配送地址</a></li>
-                                  <li><a href="${basepath}/account/favorite"><span class="glyphicon glyphicon-tags"></span>&nbsp;收藏夹</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="${basepath}/account/exit"><span class="glyphicon glyphicon-pause"></span>&nbsp;退出系统</a></li>
-                              </ul>
-							</span>
-		          		</span>
-		          		<span style="display: none;">
-							${currentAccount().nickname!""}
-		          			(${currentAccount().loginType!""})
-		          		</span>
-					<#else >
-		          		
-					</#if>
-		    	</div>
-			</div>
+			
 	
 	</div>
 </div>
