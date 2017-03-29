@@ -29,7 +29,7 @@
 </style>
 		<div class="slideTxtBox">
 			<div class="hd">
-				<ul><li>商品介绍</li><li>商品评论</li></ul>
+				<ul><li>数据详情</li><li>数据样例</li><li>支付须知</li></ul>
 			</div>
 			<div class="bd">
 				<ul>
