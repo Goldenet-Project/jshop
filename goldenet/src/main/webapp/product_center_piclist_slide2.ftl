@@ -36,30 +36,12 @@ div.zoomMask{position:absolute;background:url("${basepath}/resource/js/jquery.im
 		<#list e.productImageList as img>
 		
 			<#if img_index==0>
-				<a href="${systemSetting().imageRootPath}${img.image3!""}">
-				<img
+				
+				<img 
 				src="${systemSetting().imageRootPath}${img.image2!""}"
-				rel="${systemSetting().imageRootPath}${img.image3!""}" class="jqzoom" /></a>
+				rel="${systemSetting().imageRootPath}${img.image3!""}" class="jqzoom" />
 			</#if>
 		</#list>
 	</div>
-
-	<ul class="tb-thumb" id="thumblist">
-<#list e.productImageList as img>
-
-			<#if img_index==0>
-				<li class="tb-selected">
-			<#else>
-				<li>
-			</#if>
-				<div class="tb-pic tb-s40" style="width: 50px;height: 50px;">    
-					<a href="#"><img style="max-width: 50px;max-height: 50px;" src="${systemSetting().imageRootPath}${img.image1!""}"
-					mid="${systemSetting().imageRootPath}${img.image2!""}"
-					big="${systemSetting().imageRootPath}${img.image3!""}"></a>
-				</div>
-			</li>
-</#list>
-	</ul>
-	
 </div>
 

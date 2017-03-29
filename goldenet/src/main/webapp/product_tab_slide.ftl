@@ -22,7 +22,7 @@
 /* 			overflow: hidden; /*注意不要写在最后了*/ */
 /* 			white-space: nowrap; */
 /* 			-o-text-overflow: ellipsis; */
-/* 			text-overflow: ellipsis; */
+/* 			 */
 /* 		} */
 .slideTxtBox .bd li .date{ float:right; color:#999;  }
 #productdetailDiv img{max-width: 670px;}
@@ -33,18 +33,7 @@
 			</div>
 			<div class="bd">
 				<ul>
-					<!-- 商品参数
-					<div class="row">
-						<div class="col-md-12">
-							<#list e.parameterList as item>
-								<div class="col-md-4" style="margin-bottom: 5px;padding-right: 2px;">
-									<b>${item.name!""} : </b>${item.value!""}<br>
-								</div>
-							</#list>
-						</div>
-					</div> -->
 					<br>
-					
 					<!-- 商品HTML信息 -->
 					<div class="row">
 						<div class="col-xs-12">
@@ -54,57 +43,67 @@
 						</div>
 					</div>
 				</ul>
-				<ul>
-				<!-- 评论 -->
-					<#if  commentTypeCode=="default">
-						<!-- 系统评论 -->
+				
+			
+					
+					<!------------------------------------------------------------------------------------->
+					<ul>
 						<div class="row">
+								<div class="col-xs-12">
+										<ul class="media-list">
+									  		<li class="media">
+									    		<span class="pull-left" href="#">
+											    数据样例数据样例数据样例数据样例数据样例
+											    </span>
+											    <div class="media-body">
+											       数据样例数据样例数据样例
+											    </div>
+											  </li>
+											</ul>
+								</div>
 							<div class="col-xs-12">
-								<#list pager.list as item>
 									<ul class="media-list">
 									  <li class="media">
 									    <span class="pull-left" href="#">
-									      <img class="media-object err-product" style="width: 50px;height: 50px;border: 0px;" alt="" src="http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393900153455_3.jpg">
-									      (金牌会员)
+									    数据样例数据样例数据样例数据样例数据样例
 									    </span>
 									    <div class="media-body">
-									      <h4 class="media-heading">${item.nickname!""}</h4>
-									      ${item.content!""}
-									      
-									      <#if item.reply??>
-										      <div class="media">
-										      	<span class="pull-left" href="#">
-											      <img class="media-object err-product" style="width: 50px;height: 50px;border: 0px;" alt="" src="http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393900153455_3.jpg">
-											      (店小二)
-											    </span>
-											    <div class="media-body">
-											    	<h4 class="media-heading" style="color:color:#f50">[店小二]回复：</h4>
-										      		${item.reply!""}
-											    </div>
-										      </div>
-									      </#if>
+									       数据样例数据样例数据样例
 									    </div>
 									  </li>
 									</ul>
-								</#list>
 							</div>
-							<div class="row" style="text-align: right;">
-								<div class="col-xs-12">
-									<#if pager.list??>
-										<#include "/pager.ftl"/>
-									<#else>
-										该商品暂无评论！
-									</#if>
-								</div>
-							</div>
-						</div>
-					<#elseif commentTypeCode=="duoshuo">
-						<div class="row">
 							<div class="col-xs-12">
-								<#include "/duoshuo.ftl"/>
+									<ul class="media-list">
+									  <li class="media">
+									    <span class="pull-left" href="#">
+									    数据样例数据样例数据样例数据样例数据样例
+									    </span>
+									    <div class="media-body">
+									       数据样例数据样例数据样例
+									    </div>
+									  </li>
+									</ul>
 							</div>
-						</div>
-					</#if>
+					</ul>
+			<!------------------------------------------------------------------------------------->	
+				<ul>
+					<div class="row">
+							<div class="col-xs-12">
+									<ul class="media-list">
+									  <li class="media">
+									    <span class="pull-left" href="#">
+									    这里是支付须知
+									    </span>
+									    <div class="media-body">
+									      
+									           支付须知支付须知支付须知支付须知支付须知支付须知
+									    
+									    </div>
+									  </li>
+									</ul>
+							</div>
 				</ul>
+		<!------------------------------------------------------------------------------------->	
 			</div>
 		</div>
