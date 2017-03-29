@@ -90,7 +90,11 @@
 				  <div class="form-group">
 				    <div class="col-lg-offset-2 col-lg-6">
 				      <input type="submit" class="btn btn-success btn-sm" value="保存"/>
+				      <a href="http://localhost:8080/goldenet/index">
+				     <input type="button"  class="btn btn-success btn-sm" value="返回"/></a>
 				    </div>
+				    
+				    
 				  </div>
 				</form>
 				
