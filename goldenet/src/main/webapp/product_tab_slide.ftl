@@ -22,7 +22,7 @@
 /* 			overflow: hidden; /*注意不要写在最后了*/ */
 /* 			white-space: nowrap; */
 /* 			-o-text-overflow: ellipsis; */
-/* 			 */
+/* 			text-overflow: ellipsis; */
 /* 		} */
 .slideTxtBox .bd li .date{ float:right; color:#999;  }
 #productdetailDiv img{max-width: 670px;}
