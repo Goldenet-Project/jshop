@@ -25,7 +25,7 @@
 /* 			text-overflow: ellipsis; */
 /* 		} */
 .slideTxtBox .bd li .date{ float:right; color:#999;  }
-#productdetailDiv img{max-width: 670px;}
+#productdetailDiv img{max-width: 400px;}
 </style>
 		<div class="slideTxtBox">
 			<div class="hd">
