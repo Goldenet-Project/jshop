@@ -94,10 +94,18 @@
 							</div>
 							
 							<div class="row">
-								<a href="${basepath}/order/confirmOrder.html" data-toggle="show" data-placement="top" class="btn btn-success" id="confirmOrderBtn" onclick="return confirmOrder()" disabled="disabled">
+								<a href="${basepath}/order/toCommit.do"  class="btn btn-success" >
 									<span class="glyphicon glyphicon-ok"></span>提交订单
 								</a>
 							</div>
+							
+							<!--
+							<div class="row">
+								<a href="${basepath}/order/toCommit.do" data-toggle="show" data-placement="top" class="btn btn-success" id="confirmOrderBtn"  disabled="disabled">
+									<span class="glyphicon glyphicon-ok"></span>提交订单
+								</a>
+							</div>
+							-->
 						</div>
 					<#else>
 <!-- 						<div class="alert alert-info">您的购物车是空的，立即去商城逛逛...</div> -->
