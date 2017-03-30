@@ -6,6 +6,9 @@
 	<a href="${basepath}/account/topwd" class="list-group-item ${(currentMenu=="topwd")?string('active', '')}">
 		<span class="glyphicon glyphicon-screenshot"></span>&nbsp;修改密码
 	</a>
+	<a href="${systemSetting().www}/cart/cart.html" class="list-group-item ${(currentMenu=="car")?string('active', '')}">
+		<span class="glyphicon glyphicon-th"></span>&nbsp;我的购物车
+	</a>
 	<a href="${basepath}/account/orders" class="list-group-item ${(currentMenu=="orders")?string('active', '')}">
 		<span class="glyphicon glyphicon-th"></span>&nbsp;我的订单
 	</a>
