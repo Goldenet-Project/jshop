@@ -365,6 +365,13 @@ function defaultProductImg(){
 												<button type="button" data-toggle="show" data-placement="top" id="addToCartBtn" onclick="addToCart()" value="加入购物车" disabled="disabled" class="btn btn-primary btn-sm">
 													<span class="glyphicon glyphicon-shopping-cart"></span>加入购物车
 												</button>
+												<!--只有系统管理员可实现上传数据文件 后期配置权限根据权限判断上传按钮的展示与隐藏-->
+												<button type="button" data-toggle="show" data-placement="top" id="toUpLoad"  value="上传" class="btn btn-primary btn-sm">
+													<span class="glyphicon "></span>上传
+												</button>
+												<button type="button" data-toggle="show" data-placement="top" id="toDownload"  value="下载" class="btn btn-primary btn-sm">
+													<span class="glyphicon "></span>下载
+												</button>
 											<#else>
 												<button type="button" id="addToCartBtn" onclick="addToCart()" value="加入购物车" class="btn btn-primary btn-sm" disabled="disabled">
 													<span class="glyphicon glyphicon-shopping-cart"></span>加入购物车
@@ -375,6 +382,7 @@ function defaultProductImg(){
 												data-container="body" data-toggle="popover" data-placement="right" data-content="">
 												<span class="glyphicon glyphicon-flag"></span>收藏
 											</button>
+											
 										</div>
 									</div>
 								</form>
@@ -456,7 +464,6 @@ function defaultProductImg(){
 <script src="${basepath}/resource/js/jquery.imagezoom/js/jquery.imagezoom.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-	
 	$(".jqzoom").imagezoom();
 	
 	$("#thumblist li a").click(function(){
@@ -467,6 +474,17 @@ $(document).ready(function(){
 	
 	
 });
+	//数据文件上传
+	$('#toUpLoad').click(function(){
+		var url = "${basepath}/manage/fileOut/toUpLoad.do?productID="+$("#productID").val();
+		window.location.href=url;
+	});
+	
+	//数据文件下载 
+	$('#toDownload').click(function(){
+		var url = "${basepath}/manage/fileOut/toDownload.do?productID="+$("#productID").val();
+		window.location.href=url;
+	});
 </script>
 <script>
 $(function() {
