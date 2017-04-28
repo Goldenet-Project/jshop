@@ -97,10 +97,10 @@ public class FileOutDaoImpl extends SqlSessionDaoSupport implements FileOutDao {
 	}
 
 	@Override
-	public FileOutVO selectByFileName(String fileName) {
+	public FileOutVO selectByFileName(FileOutVO file) {
 		// TODO Auto-generated method stub
 		SqlSession session=getSqlSession();
-		return (FileOutVO) session.selectOne("manage,file.selectByFileName", fileName);
+		return (FileOutVO) session.selectOne("manage,file.selectByFileName", file);
 	}
 
 }

@@ -102,7 +102,9 @@ public class FileUpLoadAction {
 		
 		for (int i = 0; i < files.length; i++) {
 			//List <FileOutVO>fileList=fileOutService.selectListByProductId(file.getProductId());
-			FileOutVO fileVo=fileOutService.selectByFileName(files[i].getOriginalFilename());
+			//将文件名称set到file对象中根据文件名称与文件绑定产品的id进行查询判断文件是否已经上传过
+			file.setFileName(files[i].getOriginalFilename());
+			FileOutVO fileVo=fileOutService.selectByFileName(file);
 			
 			if(null != fileVo && fileVo.getFileName().equals(files[i].getOriginalFilename()))
 			{

@@ -5,7 +5,7 @@ import java.util.List;
 import net.jeeshop.core.Services;
 import net.jeeshop.services.manage.fileOut.bean.FileOutVO;
 /**
- * 文件上传下载逻辑层接口
+ * 文件上传下载逻辑层 
  * @author Yang
  *
  */
@@ -53,5 +53,5 @@ public interface FileOutService extends Services<FileOutVO>{
 	* @return FileOutVO    返回类型 
 	* @throws
 	 */
-	public FileOutVO selectByFileName(String fileName);
+	public FileOutVO selectByFileName(FileOutVO file);
 }

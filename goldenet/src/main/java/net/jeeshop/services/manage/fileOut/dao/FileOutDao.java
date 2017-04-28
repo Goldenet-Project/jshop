@@ -49,5 +49,5 @@ public interface FileOutDao extends DaoManager<FileOutVO>{
 	* @return FileOutVO    返回类型 
 	* @throws
 	 */
-	public FileOutVO selectByFileName(String fileName);
+	public FileOutVO selectByFileName(FileOutVO file);
 }

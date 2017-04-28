@@ -12,7 +12,7 @@ import net.jeeshop.services.manage.fileOut.dao.FileOutDao;
 
 import org.springframework.stereotype.Service;
 /**
- * 文件上传下载逻辑层实现类
+ * 文件上传下载逻辑层 
  * @author Yang
  *
  */
@@ -87,8 +87,8 @@ public class FileOutServiceImpl extends ServersManager<FileOutVO,FileOutDao> imp
 		return this.dao.selectListByProductId(productId);
 	}
 	@Override
-	public FileOutVO selectByFileName(String fileName) {
+	public FileOutVO selectByFileName(FileOutVO file) {
 		// TODO Auto-generated method stub
-		return this.dao.selectByFileName(fileName);
+		return this.dao.selectByFileName(file);
 	}
 }
