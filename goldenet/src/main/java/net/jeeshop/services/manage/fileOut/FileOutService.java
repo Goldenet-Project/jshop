@@ -4,7 +4,11 @@ import java.util.List;
 
 import net.jeeshop.core.Services;
 import net.jeeshop.services.manage.fileOut.bean.FileOutVO;
-
+/**
+ * 文件上传下载逻辑层接口
+ * @author Yang
+ *
+ */
 public interface FileOutService extends Services<FileOutVO>{
 	
 	/**

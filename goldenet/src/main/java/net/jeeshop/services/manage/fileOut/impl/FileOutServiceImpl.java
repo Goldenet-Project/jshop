@@ -11,6 +11,11 @@ import net.jeeshop.services.manage.fileOut.bean.FileOutVO;
 import net.jeeshop.services.manage.fileOut.dao.FileOutDao;
 
 import org.springframework.stereotype.Service;
+/**
+ * 文件上传下载逻辑层实现类
+ * @author Yang
+ *
+ */
 @Service("FileOutVOSericeManage")
 public class FileOutServiceImpl extends ServersManager<FileOutVO,FileOutDao> implements FileOutService {
 	@Resource(name = "FileOutVODaoManage")

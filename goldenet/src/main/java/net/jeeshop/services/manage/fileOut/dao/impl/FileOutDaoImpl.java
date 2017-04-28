@@ -12,7 +12,11 @@ import net.jeeshop.services.manage.fileOut.dao.FileOutDao;
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
-
+/**
+ * 文件上传下载数据层实现类
+ * @author Yang
+ *
+ */
 @Repository("FileOutVODaoManage")
 public class FileOutDaoImpl extends SqlSessionDaoSupport implements FileOutDao {
 	@Resource

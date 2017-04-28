@@ -39,9 +39,13 @@ public class FileUpLoadAction {
 
 	// 上传文件页面
 	private static final String Page_toUpLoad = "manage/fileload/fileUpLoad";
+	//文件上传成功页面
 	private static final String Page_UpLoadSuccess = "manage/fileload/fileUpLoadSuccess";
+	//文件上传失败页面
 	private static final String Page_UpLoadErro = "manage/fileload/fileUpLoadErro";
+	//文件下载失败页面
 	private static final String Page_DownLoadErr = "manage/fileload/fileDownLoadErr";
+	//下载页面列表
 	private static final String Page_selectDownLoad = "manage/fileload/selectDownLoad";
 
 	public FileOutService getFileOutService() {
